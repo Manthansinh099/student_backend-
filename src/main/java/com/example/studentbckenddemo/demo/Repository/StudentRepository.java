@@ -1,2 +1,8 @@
-package com.example.studentbckenddemo.demo.Repository;public interface StudentRepository {
+package com.example.studentbckenddemo.demo.Repository;
+
+import com.example.studentbckenddemo.demo.model.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StudentRepository extends JpaRepository<Student, Integer> {
+
 }
